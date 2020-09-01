@@ -1,3 +1,1 @@
-##A-Frame Demo Project##
-Hello me!
-Hey
+# A-Frame Demo Project
