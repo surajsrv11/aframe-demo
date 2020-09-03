@@ -7,18 +7,20 @@
     <script src="https://aframe.io/releases/0.2.0/aframe.js"></script>
 </head>
 <body>
+
+
     <a-scene>
         <a-assets>
-            <img src="wall.jpg" id="wall">
+            
+            <a-asset-item src="pokeball-vray.mtl" id="mtl-pokeball"></a-asset-item>
+            <a-asset-item src="pokeball-vray.obj" id="obj-pokeball"></a-asset-item>
+           
         </a-assets>
 
-        <a-box src="#wall" width="1" height="2" depth="1">
-
-            <a-animation attributes="rotation" repeat="indefinite" to="0 180 0"></a-animation>
-
-        </a-box>
-
+        <a-obj-model src="#obj-pokeball" mtl="#mtl-pokeball"></a-obj-model>
+        <a-entity scale="0.01 0.01 0.01"></a-entity>
 
     </a-scene>
+
 </body>
 </html>
